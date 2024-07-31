@@ -120,6 +120,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\ActionLinkController.cs" />
     <Compile Include="Controllers\DifferenceViewDataViewBagController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\RazorSyntaxController.cs" />
@@ -179,6 +180,9 @@
     <Content Include="Views\Session\Index.cshtml" />
     <Content Include="Views\Session\About.cshtml" />
     <Content Include="Views\Session\Contact.cshtml" />
+    <Content Include="Views\ActionLink\Index.cshtml" />
+    <Content Include="Views\ActionLink\About.cshtml" />
+    <Content Include="Views\ActionLink\Contact.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
