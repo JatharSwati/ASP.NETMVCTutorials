@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>@ViewData["Message"]</p>
+<p>@ViewData["CurrentTime"]</p>
+
+<ul>
+    @{ 
+        foreach (var i in (string[])ViewData["FruitsArray"])
+        {
+            <li>@i</li>
+        }
+    }
+</ul>
+
