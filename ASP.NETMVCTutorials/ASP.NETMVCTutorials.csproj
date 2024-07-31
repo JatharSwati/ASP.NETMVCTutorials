@@ -120,12 +120,16 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\DifferenceViewDataViewBagController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\RazorSyntaxController.cs" />
+    <Compile Include="Controllers\ViewBagController.cs" />
     <Compile Include="Controllers\ViewDataController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Employee.cs" />
+    <Compile Include="Models\Teacher.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -164,10 +168,12 @@
     <Content Include="Views\Home\AboutUs.cshtml" />
     <Content Include="Views\RazorSyntax\Index.cshtml" />
     <Content Include="Views\ViewData\Index.cshtml" />
+    <Content Include="Views\ViewBag\Index.cshtml" />
+    <Content Include="Views\DifferenceViewDataViewBag\Index.cshtml" />
+    <Content Include="Views\DifferenceViewDataViewBag\About.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

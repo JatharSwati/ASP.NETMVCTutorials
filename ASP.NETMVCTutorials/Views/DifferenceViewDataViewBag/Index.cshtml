@@ -1,0 +1,53 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>@ViewData["Message1"]</p>
+<p>@ViewBag.Message1</p>
+
+
+<p>@ViewData["CurrentDate1"]</p>
+<p>@ViewBag.CurrentDate2</p>
+
+
+<ul>
+    @{
+        foreach (var i in (string[])ViewData["GamesArray1"])
+        {
+            <li>@i</li>
+        }
+    }
+</ul>
+
+
+<ul>
+    @{
+        foreach (var i in ViewBag.GamesArray2)
+        {
+            <li>@i</li>
+        }
+    }
+</ul>
+
+
+@{
+    var a = (ASP.NETMVCTutorials.Models.Teacher)ViewData["Teacher1"];
+    var b = ViewBag.Teacher2;
+}
+
+@{
+    <p>@a.TeacherId</p>
+    <p>@a.Name</p>
+    <p>@a.Age</p>
+    <p>@a.Salary</p>
+}
+
+@{
+    <p>@b.TeacherId</p>
+    <p>@b.Name</p>
+    <p>@b.Age</p>
+    <p>@b.Salary</p>
+}
