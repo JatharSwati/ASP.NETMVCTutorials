@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewBag.Title = "About";
+}
+
+<h2>About</h2>
+
+<h4>This is a About page.</h4>
+
+<p>ViewData data is = @ViewData["Var1"]</p>
+<p>ViewBag data is = @ViewBag.Var2</p>
+<p>TempData data is = @TempData["Var3"]</p>
+<p>Session data is = @Session["Var4"]</p>
+
+<ul>
+    @{ 
+        foreach (var i in (string[])Session["StudentsArray"])
+        {
+            <li>@i</li>
+        }
+    }
+</ul>

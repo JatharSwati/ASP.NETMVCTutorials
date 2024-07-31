@@ -123,6 +123,7 @@
     <Compile Include="Controllers\DifferenceViewDataViewBagController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\RazorSyntaxController.cs" />
+    <Compile Include="Controllers\SessionController.cs" />
     <Compile Include="Controllers\TempDataController.cs" />
     <Compile Include="Controllers\ViewBagController.cs" />
     <Compile Include="Controllers\ViewDataController.cs" />
@@ -175,6 +176,9 @@
     <Content Include="Views\TempData\Index.cshtml" />
     <Content Include="Views\TempData\About.cshtml" />
     <Content Include="Views\TempData\Contact.cshtml" />
+    <Content Include="Views\Session\Index.cshtml" />
+    <Content Include="Views\Session\About.cshtml" />
+    <Content Include="Views\Session\Contact.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
