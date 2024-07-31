@@ -123,6 +123,7 @@
     <Compile Include="Controllers\DifferenceViewDataViewBagController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\RazorSyntaxController.cs" />
+    <Compile Include="Controllers\TempDataController.cs" />
     <Compile Include="Controllers\ViewBagController.cs" />
     <Compile Include="Controllers\ViewDataController.cs" />
     <Compile Include="Global.asax.cs">
@@ -171,6 +172,9 @@
     <Content Include="Views\ViewBag\Index.cshtml" />
     <Content Include="Views\DifferenceViewDataViewBag\Index.cshtml" />
     <Content Include="Views\DifferenceViewDataViewBag\About.cshtml" />
+    <Content Include="Views\TempData\Index.cshtml" />
+    <Content Include="Views\TempData\About.cshtml" />
+    <Content Include="Views\TempData\Contact.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
