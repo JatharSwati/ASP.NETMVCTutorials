@@ -1,0 +1,37 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+@{
+    Html.BeginForm("Index", "FormWithHtmlHelperMethods");
+}
+
+@Html.Label("User Name") &nbsp; @Html.TextBox("User Name", "", new { @class = "form-control"})
+<br />
+<br />
+@Html.Label("Passward") &nbsp; @Html.Password("Pass", "", new { @class = "form-control" })
+<br />
+<br />
+@Html.Label("Male") &nbsp; @Html.RadioButton("Gender", "Male")
+@Html.Label("Female") &nbsp; @Html.RadioButton("Gender", "Female")
+<br />
+<br />
+@Html.Label("Select Country") &nbsp; @Html.DropDownList("CountryList", new SelectList(new[] { "India", "Pakisatn", "Shrilanka", "Bangladesh" }), "Select", new { @class = "form-control" })
+<br />
+<br />
+@Html.Label("Address") &nbsp; @Html.TextArea("AddressArea", "", 3, 50, new { @class = "form-control" })
+<br />
+<br />
+@Html.CheckBox("AcceptTerms", true) &nbsp; @Html.Label("I accept the terms.")
+@Html.Hidden("id")
+<br />
+<br />
+<input type="submit" name="Submit" class="form-control"/>
+
+@{
+    Html.EndForm();
+}
+

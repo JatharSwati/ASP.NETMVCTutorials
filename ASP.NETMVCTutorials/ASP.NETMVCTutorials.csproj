@@ -122,6 +122,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\ActionLinkController.cs" />
     <Compile Include="Controllers\DifferenceViewDataViewBagController.cs" />
+    <Compile Include="Controllers\FormWithHtmlHelperMethodsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\RazorSyntaxController.cs" />
     <Compile Include="Controllers\SessionController.cs" />
@@ -185,6 +186,7 @@
     <Content Include="Views\ActionLink\About.cshtml" />
     <Content Include="Views\ActionLink\Contact.cshtml" />
     <Content Include="Views\TextBox\Index.cshtml" />
+    <Content Include="Views\FormWithHtmlHelperMethods\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
