@@ -126,6 +126,7 @@
     <Compile Include="Controllers\RazorSyntaxController.cs" />
     <Compile Include="Controllers\SessionController.cs" />
     <Compile Include="Controllers\TempDataController.cs" />
+    <Compile Include="Controllers\TextBoxController.cs" />
     <Compile Include="Controllers\ViewBagController.cs" />
     <Compile Include="Controllers\ViewDataController.cs" />
     <Compile Include="Global.asax.cs">
@@ -183,6 +184,7 @@
     <Content Include="Views\ActionLink\Index.cshtml" />
     <Content Include="Views\ActionLink\About.cshtml" />
     <Content Include="Views\ActionLink\Contact.cshtml" />
+    <Content Include="Views\TextBox\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
