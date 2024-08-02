@@ -126,6 +126,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\HTMLActionLinkAndUrlActionController.cs" />
     <Compile Include="Controllers\LayoutViewController.cs" />
+    <Compile Include="Controllers\PartialViewController.cs" />
     <Compile Include="Controllers\RazorSyntaxController.cs" />
     <Compile Include="Controllers\SessionController.cs" />
     <Compile Include="Controllers\StronglyTypeViewController.cs" />
@@ -197,6 +198,10 @@
     <Content Include="Views\LayoutView\Contact.cshtml" />
     <Content Include="Views\LayoutView\Index.cshtml" />
     <Content Include="Views\StronglyTypeView\Index.cshtml" />
+    <Content Include="Views\PartialView\Index.cshtml" />
+    <Content Include="Views\Shared\_EmployeesList.cshtml" />
+    <Content Include="Views\PartialView\Contact.cshtml" />
+    <Content Include="Views\Shared\_LoginPartialView.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
