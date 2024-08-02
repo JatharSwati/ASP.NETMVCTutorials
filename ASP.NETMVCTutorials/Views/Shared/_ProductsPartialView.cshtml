@@ -1,0 +1,26 @@
+﻿@model ASP.NETMVCTutorials.Models.Product
+
+<table border="2" width="400" align="center">
+    <tr>
+        <td>
+            <img  src="@Url.Content(Model.Picture)" width="150" height="150"/>
+        </td>
+        <td>
+            <table>
+                <tr>
+                    <td>Product Id:</td>
+                    <td>@Model.Id</td>
+                </tr>
+                <tr>
+                    <td>Product Name:</td>
+                    <td>@Model.Name</td>
+                </tr>
+                <tr>
+                    <td>Product Price:</td>
+                    <td>@Model.Price</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+<br />

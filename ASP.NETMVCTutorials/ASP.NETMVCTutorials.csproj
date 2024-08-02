@@ -130,6 +130,7 @@
     <Compile Include="Controllers\PartialViewController.cs" />
     <Compile Include="Controllers\RazorSyntaxController.cs" />
     <Compile Include="Controllers\SessionController.cs" />
+    <Compile Include="Controllers\StronglyTypedPartialViewController.cs" />
     <Compile Include="Controllers\StronglyTypeViewController.cs" />
     <Compile Include="Controllers\TempDataController.cs" />
     <Compile Include="Controllers\TextBoxController.cs" />
@@ -139,6 +140,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Employee.cs" />
+    <Compile Include="Models\Product.cs" />
     <Compile Include="Models\Student.cs" />
     <Compile Include="Models\Teacher.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -152,6 +154,9 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Images\Goggles.jpeg" />
+    <Content Include="Images\Shoes.jpeg" />
+    <Content Include="Images\Watch.jpeg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
@@ -205,6 +210,8 @@
     <Content Include="Views\Shared\_LoginPartialView.cshtml" />
     <Content Include="Views\DifferencePartialAndRenderPartial\Index.cshtml" />
     <Content Include="Views\Shared\_StudentsList.cshtml" />
+    <Content Include="Views\StronglyTypedPartialView\Index.cshtml" />
+    <Content Include="Views\Shared\_ProductsPartialView.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
