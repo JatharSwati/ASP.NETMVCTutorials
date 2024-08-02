@@ -1,0 +1,45 @@
+﻿@model List<ASP.NETMVCTutorials.Models.Student>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<br />
+
+@{ 
+    var a = (ASP.NETMVCTutorials.Models.Student)ViewData["Var1"];
+    var b = ViewBag.Var2;
+}
+
+<h4>ViewData Data</h4>
+<p>@a.StudentId</p>
+<p>@a.Name</p>
+<p>@a.Age</p>
+
+<br />
+
+<h4>ViewBag Data</h4>
+<p>@b.StudentId</p>
+<p>@b.Name</p>
+<p>@b.Age</p>
+
+<br />
+
+<h4>Strongly Typed View Data</h4>
+<ul>
+    @{
+        foreach (var i in Model)
+        {
+            <li>@i.StudentId</li>
+            <li>@i.Name</li>
+            <li>@i.Age</li>
+            <br />
+        }
+    }
+</ul>
+
+@*<p>@Model.StudentId</p>
+<p>@Model.Name</p>
+<p>@Model.Age</p>*@
+
