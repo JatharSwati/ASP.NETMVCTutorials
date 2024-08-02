@@ -125,6 +125,7 @@
     <Compile Include="Controllers\FormWithHtmlHelperMethodsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\HTMLActionLinkAndUrlActionController.cs" />
+    <Compile Include="Controllers\LayoutViewController.cs" />
     <Compile Include="Controllers\RazorSyntaxController.cs" />
     <Compile Include="Controllers\SessionController.cs" />
     <Compile Include="Controllers\TempDataController.cs" />
@@ -190,6 +191,9 @@
     <Content Include="Views\FormWithHtmlHelperMethods\Index.cshtml" />
     <Content Include="Views\HTMLActionLinkAndUrlAction\Index.cshtml" />
     <Content Include="Views\HTMLActionLinkAndUrlAction\About.cshtml" />
+    <Content Include="Views\LayoutView\About.cshtml" />
+    <Content Include="Views\LayoutView\Contact.cshtml" />
+    <Content Include="Views\LayoutView\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
