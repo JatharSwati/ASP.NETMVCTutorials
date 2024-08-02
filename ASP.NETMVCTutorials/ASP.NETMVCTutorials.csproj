@@ -121,6 +121,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\ActionLinkController.cs" />
+    <Compile Include="Controllers\DifferencePartialAndRenderPartialController.cs" />
     <Compile Include="Controllers\DifferenceViewDataViewBagController.cs" />
     <Compile Include="Controllers\FormWithHtmlHelperMethodsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -202,6 +203,8 @@
     <Content Include="Views\Shared\_EmployeesList.cshtml" />
     <Content Include="Views\PartialView\Contact.cshtml" />
     <Content Include="Views\Shared\_LoginPartialView.cshtml" />
+    <Content Include="Views\DifferencePartialAndRenderPartial\Index.cshtml" />
+    <Content Include="Views\Shared\_StudentsList.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
