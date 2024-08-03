@@ -1,0 +1,23 @@
+﻿@model ASP.NETMVCTutorials.Models.SignUp
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+@using (Html.BeginForm())   
+{
+    @Html.HiddenFor(model => model.UserId)
+
+    <p>@Html.DisplayNameFor(model => model.UserName) &nbsp; @Html.TextBoxFor(model => model.UserName, new { @class = "form-control"})</p>
+
+    <p>@Html.LabelFor(model => model.UserPassward) &nbsp; @Html.PasswordFor(model => model.UserPassward, new { @class = "form-control" })</p>
+
+    <p>@Html.LabelFor(model => model.UserGender) &nbsp; @Html.DropDownListFor(model => model.UserGender, new SelectList(new[] { "Male", "Female" }, "Select"), new { @class = "form-control" })</p>
+
+    <p>@Html.LabelFor(model => model.UserEmail) &nbsp; @Html.TextBoxFor(model => model.UserEmail, new { @class = "form-control" })</p>
+
+    <p>@Html.LabelFor(model => model.UserComment) &nbsp; @Html.TextAreaFor(model => model.UserComment, new { @class = "form-control" })</p>
+
+    <input type="submit" value="Submit" class = "form-control"}/>
+}

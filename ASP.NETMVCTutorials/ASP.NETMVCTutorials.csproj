@@ -127,9 +127,11 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\HTMLActionLinkAndUrlActionController.cs" />
     <Compile Include="Controllers\LayoutViewController.cs" />
+    <Compile Include="Controllers\MyCalculationController.cs" />
     <Compile Include="Controllers\PartialViewController.cs" />
     <Compile Include="Controllers\RazorSyntaxController.cs" />
     <Compile Include="Controllers\SessionController.cs" />
+    <Compile Include="Controllers\StronglyTypedHTMLHelpersController.cs" />
     <Compile Include="Controllers\StronglyTypedPartialViewController.cs" />
     <Compile Include="Controllers\StronglyTypeViewController.cs" />
     <Compile Include="Controllers\TempDataController.cs" />
@@ -139,8 +141,10 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Calculation.cs" />
     <Compile Include="Models\Employee.cs" />
     <Compile Include="Models\Product.cs" />
+    <Compile Include="Models\SignUp.cs" />
     <Compile Include="Models\Student.cs" />
     <Compile Include="Models\Teacher.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -212,6 +216,8 @@
     <Content Include="Views\Shared\_StudentsList.cshtml" />
     <Content Include="Views\StronglyTypedPartialView\Index.cshtml" />
     <Content Include="Views\Shared\_ProductsPartialView.cshtml" />
+    <Content Include="Views\StronglyTypedHTMLHelpers\Index.cshtml" />
+    <Content Include="Views\MyCalculation\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
