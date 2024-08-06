@@ -121,6 +121,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\ActionLinkController.cs" />
+    <Compile Include="Controllers\DataAnnotationController.cs" />
     <Compile Include="Controllers\DifferencePartialAndRenderPartialController.cs" />
     <Compile Include="Controllers\DifferenceViewDataViewBagController.cs" />
     <Compile Include="Controllers\FormWithHtmlHelperMethodsController.cs" />
@@ -143,6 +144,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Calculation.cs" />
+    <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\Employee.cs" />
     <Compile Include="Models\Product.cs" />
     <Compile Include="Models\SignUp.cs" />
@@ -220,6 +222,7 @@
     <Content Include="Views\StronglyTypedHTMLHelpers\Index.cshtml" />
     <Content Include="Views\MyCalculation\Index.cshtml" />
     <Content Include="Views\ValidationMessageAndValidationSummaryMethods\Index.cshtml" />
+    <Content Include="Views\DataAnnotation\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

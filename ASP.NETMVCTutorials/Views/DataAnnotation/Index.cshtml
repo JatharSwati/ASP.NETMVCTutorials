@@ -1,0 +1,40 @@
+﻿@model ASP.NETMVCTutorials.Models.Customer
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+
+@using (Html.BeginForm())
+{
+    <p>
+        @Html.LabelFor(model => model.CustomerId) &nbsp; @Html.TextBoxFor(model => model.CustomerId, "", new { @class = "form-control"})
+        @Html.ValidationMessageFor(model => model.CustomerId, "", new { @class = "text-danger"})
+    </p>
+
+    <p>
+        @Html.LabelFor(model => model.CustomerName) &nbsp; @Html.TextBoxFor(model => model.CustomerName, "", new { @class = "form-control" })
+        @Html.ValidationMessageFor(model => model.CustomerName, "", new { @class = "text-danger" })
+    </p>
+
+    <p>
+        @Html.LabelFor(model => model.CustomerAge) &nbsp; @Html.TextBoxFor(model => model.CustomerAge, "", new { @class = "form-control" })
+        @Html.ValidationMessageFor(model => model.CustomerAge, "", new { @class = "text-danger" })
+    </p>
+
+    <p>
+        @Html.LabelFor(model => model.CustomerGender) &nbsp; @Html.TextBoxFor(model => model.CustomerGender, "", new { @class = "form-control" })
+        @Html.ValidationMessageFor(model => model.CustomerGender, "", new { @class = "text-danger" })
+    </p>
+
+    <p>
+        @Html.LabelFor(model => model.CustomerEmail) &nbsp; @Html.TextBoxFor(model => model.CustomerEmail, "", new { @class = "form-control" })
+        @Html.ValidationMessageFor(model => model.CustomerEmail, "", new { @class = "text-danger" })
+    </p>
+
+    <input type="submit" value="Submit" class="btn btn-info"/>
+
+    @Html.Raw(ViewData["SuccessMessage"])
+}
