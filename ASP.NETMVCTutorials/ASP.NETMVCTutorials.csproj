@@ -136,6 +136,7 @@
     <Compile Include="Controllers\StronglyTypeViewController.cs" />
     <Compile Include="Controllers\TempDataController.cs" />
     <Compile Include="Controllers\TextBoxController.cs" />
+    <Compile Include="Controllers\ValidationMessageAndValidationSummaryMethodsController.cs" />
     <Compile Include="Controllers\ViewBagController.cs" />
     <Compile Include="Controllers\ViewDataController.cs" />
     <Compile Include="Global.asax.cs">
@@ -218,6 +219,7 @@
     <Content Include="Views\Shared\_ProductsPartialView.cshtml" />
     <Content Include="Views\StronglyTypedHTMLHelpers\Index.cshtml" />
     <Content Include="Views\MyCalculation\Index.cshtml" />
+    <Content Include="Views\ValidationMessageAndValidationSummaryMethods\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
