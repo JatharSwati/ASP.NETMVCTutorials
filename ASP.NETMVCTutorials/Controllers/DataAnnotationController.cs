@@ -20,12 +20,11 @@ namespace ASP.NETMVCTutorials.Controllers
         {
             if(ModelState.IsValid == true)
             {
-                ViewData["SuccessMessage"] = "<script>alert('Data has been Submited !')</script";
+                ViewData["SuccessMessage"] = "<script>alert('Data has been Submited !')</script>";
                 ModelState.Clear();
             }
             return View();
         }
-
-
+        
     }
 }

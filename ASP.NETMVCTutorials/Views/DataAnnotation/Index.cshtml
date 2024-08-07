@@ -10,8 +10,8 @@
 @using (Html.BeginForm())
 {
     <p>
-        @Html.LabelFor(model => model.CustomerId) &nbsp; @Html.TextBoxFor(model => model.CustomerId, "", new { @class = "form-control"})
-        @Html.ValidationMessageFor(model => model.CustomerId, "", new { @class = "text-danger"})
+        @Html.LabelFor(model => model.CustomerId) &nbsp; @Html.TextBoxFor(model => model.CustomerId, "", new { @class = "form-control" })
+        @Html.ValidationMessageFor(model => model.CustomerId, "", new { @class = "text-danger" })
     </p>
 
     <p>
@@ -34,7 +34,36 @@
         @Html.ValidationMessageFor(model => model.CustomerEmail, "", new { @class = "text-danger" })
     </p>
 
-    <input type="submit" value="Submit" class="btn btn-info"/>
+    <p>
+        @Html.LabelFor(model => model.CustomerPassword) &nbsp; @Html.EditorFor(model => model.CustomerPassword, "", new { htmlAttributes = new { @class = "form-control" } })
+        @Html.ValidationMessageFor(model => model.CustomerPassword, "", new { @class = "text-danger" })
+    </p>
+
+    <p>
+        @Html.LabelFor(model => model.CustomerConfirmPassword) &nbsp; @Html.EditorFor(model => model.CustomerConfirmPassword, "", new { htmlAttributes = new { @class = "form-control" } })
+        @Html.ValidationMessageFor(model => model.CustomerConfirmPassword, "", new { @class = "text-danger" })
+    </p>
+
+    <p>
+        @Html.LabelFor(model => model.CustomerOrganizationName) &nbsp; @Html.TextBoxFor(model => model.CustomerOrganizationName, "", new { @class = "form-control", @Value = "ABC Organization", @readonly = true })
+    </p>
+
+    <p>
+        @Html.LabelFor(model => model.CustomerAddress) &nbsp; @Html.EditorFor(model => model.CustomerAddress, "", new { htmlAttributes = new { @class = "form-control" } })
+        @Html.ValidationMessageFor(model => model.CustomerAddress, "", new { @class = "text-danger" })
+    </p>
+
+    <p>
+        @Html.LabelFor(model => model.CustomerJoiningDate) &nbsp; @Html.EditorFor(model => model.CustomerJoiningDate, "", new { htmlAttributes = new { @class = "form-control" } })
+        @Html.ValidationMessageFor(model => model.CustomerJoiningDate, "", new { @class = "text-danger" })
+    </p>
+
+    <p>
+        @Html.LabelFor(model => model.CustomerJoiningTime) &nbsp; @Html.EditorFor(model => model.CustomerJoiningTime, "", new { htmlAttributes = new { @class = "form-control" } })
+        @Html.ValidationMessageFor(model => model.CustomerJoiningTime, "", new { @class = "text-danger" })
+    </p>
+
+    <input type="submit" value="Submit" class="btn btn-info" />
 
     @Html.Raw(ViewData["SuccessMessage"])
 }
