@@ -6,18 +6,19 @@
 
 <h2>Index</h2>
 
+@*@Html.Raw(TempData["DeleteMessage"])*@
+<p style="color:green;">@TempData["DeleteMessage"]</p>
 
 @*@Html.Raw(TempData["UpdateMessage"])*@
-
 <p style="color:green;">@TempData["UpdateMessage"]</p>
 
 @*@Html.Raw(TempData["InsertMessage"]);*@
-
 <p style="color:green;">@TempData["InsertMessage"]</p>
 
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
+
 <table class="table">
     <tr>
         <th>

@@ -42,7 +42,7 @@ namespace ASP.NETMVCTutorials.Controllers
                 }
                 else
                 {
-                    ViewBag.InsertMessage = "<script>alert('Data not Inserted !')</script>";
+                    ViewBag.InsertMessage = "<script>alert('Data Not Inserted !')</script>";
                 }
             }
 
@@ -73,11 +73,36 @@ namespace ASP.NETMVCTutorials.Controllers
                 }
                 else
                 {
-                    ViewBag.UpdateMessage = "<script>alert('Data not Updated !')</script>";
+                    ViewBag.UpdateMessage = "<script>alert('Data Not Updated !')</script>";
                 }
             }
 
             return View();
         }
+
+        public ActionResult Delete(int id)
+        {
+            if(id > 0)
+            {
+                var ManagerIdRow = db.Managers.Where(model => model.Id == id).FirstOrDefault();
+                if(ManagerIdRow != null)
+                {
+                    db.Entry(ManagerIdRow).State = EntityState.Deleted;
+                    int a = db.SaveChanges();
+                    if(a > 0)
+                    {
+                        //TempData["DeleteMessage"] = "<script>alert('Data Deleted !')</script>";
+                        TempData["DeleteMessage"] = "Data Deleted !";
+                    }
+                    else
+                    {
+                        TempData["DeleteMessage"] = "<script>alert('Data Not Deleted !')</script>";
+                    }
+                }
+            }
+
+            return RedirectToAction("Index");
+        }
+
     }
 }
