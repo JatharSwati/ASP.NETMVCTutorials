@@ -104,5 +104,12 @@ namespace ASP.NETMVCTutorials.Controllers
             return RedirectToAction("Index");
         }
 
+        public ActionResult Details(int id)
+        {
+            var DetailsById = db.Managers.Where(model => model.Id == id).FirstOrDefault();
+
+            return View(DetailsById);
+        }
+
     }
 }
