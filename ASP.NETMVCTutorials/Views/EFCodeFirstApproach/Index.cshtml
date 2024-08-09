@@ -6,6 +6,10 @@
 
 <h2>Index</h2>
 
+@*@Html.Raw(TempData["InsertMessage"]);*@
+
+<p style="color:green;">@TempData["InsertMessage"]</p>
+
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>

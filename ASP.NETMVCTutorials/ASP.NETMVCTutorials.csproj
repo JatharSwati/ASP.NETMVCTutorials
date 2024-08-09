@@ -233,6 +233,7 @@
     <Content Include="Views\ValidationMessageAndValidationSummaryMethods\Index.cshtml" />
     <Content Include="Views\DataAnnotation\Index.cshtml" />
     <Content Include="Views\EFCodeFirstApproach\Index.cshtml" />
+    <Content Include="Views\EFCodeFirstApproach\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
