@@ -1,6 +1,7 @@
 ﻿using ASP.NETMVCTutorials.Models;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -42,6 +43,37 @@ namespace ASP.NETMVCTutorials.Controllers
                 else
                 {
                     ViewBag.InsertMessage = "<script>alert('Data not Inserted !')</script>";
+                }
+            }
+
+            return View();
+        }
+
+        public ActionResult Edit(int id)
+        {
+            var row = db.Managers.Where(model => model.Id == id).FirstOrDefault();
+
+            return View(row);
+        }
+
+        [HttpPost]
+        public ActionResult Edit(Manager m)
+        {
+            if(ModelState.IsValid == true)
+            {
+                db.Entry(m).State = EntityState.Modified;
+                int a = db.SaveChanges();
+                if (a > 0)
+                {
+                    //ViewBag.UpdateMessage = "<script>alert('Data Updated !')</script>";
+                    //TempData["UpdateMessage"] = "<script>alert('Data Updated !')</script>";
+                    TempData["UpdateMessage"] = "Data Updated !";
+                    return RedirectToAction("Index");
+                    //ModelState.Clear();
+                }
+                else
+                {
+                    ViewBag.UpdateMessage = "<script>alert('Data not Updated !')</script>";
                 }
             }
 

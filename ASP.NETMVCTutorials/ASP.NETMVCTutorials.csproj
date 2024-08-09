@@ -234,6 +234,7 @@
     <Content Include="Views\DataAnnotation\Index.cshtml" />
     <Content Include="Views\EFCodeFirstApproach\Index.cshtml" />
     <Content Include="Views\EFCodeFirstApproach\Create.cshtml" />
+    <Content Include="Views\EFCodeFirstApproach\Edit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
