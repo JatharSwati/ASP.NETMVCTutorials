@@ -55,6 +55,8 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -128,6 +130,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\ActionLinkController.cs" />
     <Compile Include="Controllers\DataAnnotationController.cs" />
+    <Compile Include="Controllers\DatabaseFirstApproachEFController.cs" />
     <Compile Include="Controllers\DifferencePartialAndRenderPartialController.cs" />
     <Compile Include="Controllers\DifferenceViewDataViewBagController.cs" />
     <Compile Include="Controllers\EFCodeFirstApproachController.cs" />
@@ -155,6 +158,24 @@
     <Compile Include="Models\Employee.cs" />
     <Compile Include="Models\Manager.cs" />
     <Compile Include="Models\ManagerContext.cs" />
+    <Compile Include="Models\Principal.cs">
+      <DependentUpon>PrincipalDB1Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PrincipalDB1Model.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PrincipalDB1Model.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PrincipalDB1Model.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PrincipalDB1Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PrincipalDB1Model.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PrincipalDB1Model.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Models\Product.cs" />
     <Compile Include="Models\SignUp.cs" />
     <Compile Include="Models\Student.cs" />
@@ -173,8 +194,25 @@
     <Content Include="Images\Goggles.jpeg" />
     <Content Include="Images\Shoes.jpeg" />
     <Content Include="Images\Watch.jpeg" />
+    <Content Include="Models\PrincipalDB1Model.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>PrincipalDB1Model.edmx</DependentUpon>
+      <LastGenOutput>PrincipalDB1Model.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\PrincipalDB1Model.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>PrincipalDB1Model.edmx</DependentUpon>
+      <LastGenOutput>PrincipalDB1Model.cs</LastGenOutput>
+    </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <EntityDeploy Include="Models\PrincipalDB1Model.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>PrincipalDB1Model.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\PrincipalDB1Model.edmx.diagram">
+      <DependentUpon>PrincipalDB1Model.edmx</DependentUpon>
+    </Content>
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -236,6 +274,10 @@
     <Content Include="Views\EFCodeFirstApproach\Create.cshtml" />
     <Content Include="Views\EFCodeFirstApproach\Edit.cshtml" />
     <Content Include="Views\EFCodeFirstApproach\Details.cshtml" />
+    <Content Include="Views\DatabaseFirstApproachEF\Index.cshtml" />
+    <Content Include="Views\DatabaseFirstApproachEF\Create.cshtml" />
+    <Content Include="Views\DatabaseFirstApproachEF\Edit.cshtml" />
+    <Content Include="Views\DatabaseFirstApproachEF\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -252,6 +294,9 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
