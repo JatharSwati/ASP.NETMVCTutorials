@@ -138,9 +138,11 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\HTMLActionLinkAndUrlActionController.cs" />
     <Compile Include="Controllers\LayoutViewController.cs" />
+    <Compile Include="Controllers\ModelFirstApproachEFController.cs" />
     <Compile Include="Controllers\MyCalculationController.cs" />
     <Compile Include="Controllers\PartialViewController.cs" />
     <Compile Include="Controllers\RazorSyntaxController.cs" />
+    <Compile Include="Controllers\ScaffoldColumnAnnotationController.cs" />
     <Compile Include="Controllers\SessionController.cs" />
     <Compile Include="Controllers\StronglyTypedHTMLHelpersController.cs" />
     <Compile Include="Controllers\StronglyTypedPartialViewController.cs" />
@@ -153,11 +155,30 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Admin.cs">
+      <DependentUpon>AdminDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AdminDBModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AdminDBModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AdminDBModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AdminDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AdminDBModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AdminDBModel.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Models\Calculation.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\Employee.cs" />
     <Compile Include="Models\Manager.cs" />
     <Compile Include="Models\ManagerContext.cs" />
+    <Compile Include="Models\Person.cs" />
     <Compile Include="Models\Principal.cs">
       <DependentUpon>PrincipalDB1Model.tt</DependentUpon>
     </Compile>
@@ -194,6 +215,17 @@
     <Content Include="Images\Goggles.jpeg" />
     <Content Include="Images\Shoes.jpeg" />
     <Content Include="Images\Watch.jpeg" />
+    <Content Include="Models\AdminDBModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>AdminDBModel.Context.cs</LastGenOutput>
+      <DependentUpon>AdminDBModel.edmx</DependentUpon>
+    </Content>
+    <Content Include="Models\AdminDBModel.edmx.sql" />
+    <Content Include="Models\AdminDBModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>AdminDBModel.cs</LastGenOutput>
+      <DependentUpon>AdminDBModel.edmx</DependentUpon>
+    </Content>
     <Content Include="Models\PrincipalDB1Model.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>PrincipalDB1Model.edmx</DependentUpon>
@@ -212,6 +244,13 @@
     </EntityDeploy>
     <Content Include="Models\PrincipalDB1Model.edmx.diagram">
       <DependentUpon>PrincipalDB1Model.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="Models\AdminDBModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>AdminDBModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\AdminDBModel.edmx.diagram">
+      <DependentUpon>AdminDBModel.edmx</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
@@ -278,9 +317,15 @@
     <Content Include="Views\DatabaseFirstApproachEF\Create.cshtml" />
     <Content Include="Views\DatabaseFirstApproachEF\Edit.cshtml" />
     <Content Include="Views\DatabaseFirstApproachEF\Details.cshtml" />
+    <Content Include="Views\ModelFirstApproachEF\Create.cshtml" />
+    <Content Include="Views\ModelFirstApproachEF\Delete.cshtml" />
+    <Content Include="Views\ModelFirstApproachEF\Details.cshtml" />
+    <Content Include="Views\ModelFirstApproachEF\Edit.cshtml" />
+    <Content Include="Views\ModelFirstApproachEF\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\ScaffoldColumnAnnotation\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
