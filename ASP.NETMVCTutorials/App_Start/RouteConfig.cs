@@ -16,7 +16,7 @@ namespace ASP.NETMVCTutorials
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+                defaults: new { controller = "LoginFormMVC", action = "Index", id = UrlParameter.Optional }
             );
         }
     }

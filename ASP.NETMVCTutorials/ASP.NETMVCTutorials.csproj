@@ -138,6 +138,8 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\HTMLActionLinkAndUrlActionController.cs" />
     <Compile Include="Controllers\LayoutViewController.cs" />
+    <Compile Include="Controllers\LoginFormHomeController.cs" />
+    <Compile Include="Controllers\LoginFormMVCController.cs" />
     <Compile Include="Controllers\ModelFirstApproachEFController.cs" />
     <Compile Include="Controllers\MyCalculationController.cs" />
     <Compile Include="Controllers\PartialViewController.cs" />
@@ -176,6 +178,21 @@
     <Compile Include="Models\Calculation.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\Employee.cs" />
+    <Compile Include="Models\LoginDBModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LoginDBModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\LoginDBModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LoginDBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\LoginDBModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LoginDBModel.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Models\Manager.cs" />
     <Compile Include="Models\ManagerContext.cs" />
     <Compile Include="Models\Person.cs" />
@@ -201,6 +218,9 @@
     <Compile Include="Models\SignUp.cs" />
     <Compile Include="Models\Student.cs" />
     <Compile Include="Models\Teacher.cs" />
+    <Compile Include="Models\User.cs">
+      <DependentUpon>LoginDBModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -225,6 +245,16 @@
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>AdminDBModel.cs</LastGenOutput>
       <DependentUpon>AdminDBModel.edmx</DependentUpon>
+    </Content>
+    <Content Include="Models\LoginDBModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>LoginDBModel.edmx</DependentUpon>
+      <LastGenOutput>LoginDBModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\LoginDBModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>LoginDBModel.edmx</DependentUpon>
+      <LastGenOutput>LoginDBModel.cs</LastGenOutput>
     </Content>
     <Content Include="Models\PrincipalDB1Model.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
@@ -251,6 +281,13 @@
     </EntityDeploy>
     <Content Include="Models\AdminDBModel.edmx.diagram">
       <DependentUpon>AdminDBModel.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="Models\LoginDBModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>LoginDBModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\LoginDBModel.edmx.diagram">
+      <DependentUpon>LoginDBModel.edmx</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
@@ -322,6 +359,8 @@
     <Content Include="Views\ModelFirstApproachEF\Details.cshtml" />
     <Content Include="Views\ModelFirstApproachEF\Edit.cshtml" />
     <Content Include="Views\ModelFirstApproachEF\Index.cshtml" />
+    <Content Include="Views\LoginFormMVC\Index.cshtml" />
+    <Content Include="Views\LoginFormHome\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
