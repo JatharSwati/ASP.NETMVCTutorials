@@ -1,0 +1,30 @@
+﻿@model ASP.NETMVCTutorials.Models.CookiesUser
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+@using (Html.BeginForm("Index", "Cookies", FormMethod.Post))
+{
+    <table>
+        <tr>
+            <td>
+                @Html.LabelFor(model => model.Username)
+            </td>
+            <td>
+                @Html.TextBoxFor(model => model.Username, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.Username, "", new { @class = "text-danger"})
+            </td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td>
+                <input type="submit" value="Submit" class="btn btn-info"/>
+            </td>
+        </tr>
+    </table>
+}
+

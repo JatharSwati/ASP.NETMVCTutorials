@@ -26,5 +26,7 @@ namespace ASP.NETMVCTutorials.Models
         }
     
         public virtual DbSet<Admin> Admins { get; set; }
+
+        public System.Data.Entity.DbSet<ASP.NETMVCTutorials.Models.CookiesUser> CookiesUsers { get; set; }
     }
 }

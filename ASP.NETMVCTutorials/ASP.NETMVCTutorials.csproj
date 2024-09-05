@@ -129,6 +129,8 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\ActionLinkController.cs" />
+    <Compile Include="Controllers\CookiesController.cs" />
+    <Compile Include="Controllers\DashboardController.cs" />
     <Compile Include="Controllers\DataAnnotationController.cs" />
     <Compile Include="Controllers\DatabaseFirstApproachEFController.cs" />
     <Compile Include="Controllers\DifferencePartialAndRenderPartialController.cs" />
@@ -176,6 +178,7 @@
       <DependentUpon>AdminDBModel.edmx</DependentUpon>
     </Compile>
     <Compile Include="Models\Calculation.cs" />
+    <Compile Include="Models\CookiesUser.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\Employee.cs" />
     <Compile Include="Models\LoginDBModel.Context.cs">
@@ -361,6 +364,8 @@
     <Content Include="Views\ModelFirstApproachEF\Index.cshtml" />
     <Content Include="Views\LoginFormMVC\Index.cshtml" />
     <Content Include="Views\LoginFormHome\Index.cshtml" />
+    <Content Include="Views\Cookies\Index.cshtml" />
+    <Content Include="Views\Dashboard\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
