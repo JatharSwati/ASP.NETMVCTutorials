@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASP.NETMVCTutorials", "ASP.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddingRememberMeFunctionality", "AddingRememberMeFunctionality\AddingRememberMeFunctionality.csproj", "{0A910FCF-8147-42EE-849D-FE93F5B50902}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyWayofCreatingCRUDApplication", "EasyWayofCreatingCRUDApplication\EasyWayofCreatingCRUDApplication.csproj", "{F7819D68-F1CF-44C6-A196-5F4C6AB18CBB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{0A910FCF-8147-42EE-849D-FE93F5B50902}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0A910FCF-8147-42EE-849D-FE93F5B50902}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0A910FCF-8147-42EE-849D-FE93F5B50902}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7819D68-F1CF-44C6-A196-5F4C6AB18CBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7819D68-F1CF-44C6-A196-5F4C6AB18CBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7819D68-F1CF-44C6-A196-5F4C6AB18CBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7819D68-F1CF-44C6-A196-5F4C6AB18CBB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
