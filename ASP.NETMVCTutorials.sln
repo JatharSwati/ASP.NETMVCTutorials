@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddingRememberMeFunctionali
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyWayofCreatingCRUDApplication", "EasyWayofCreatingCRUDApplication\EasyWayofCreatingCRUDApplication.csproj", "{F7819D68-F1CF-44C6-A196-5F4C6AB18CBB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddingSearchFunctionalityInCRUDApplication", "AddingSearchFunctionalityInCRUDApplication\AddingSearchFunctionalityInCRUDApplication.csproj", "{896E921E-D798-46A2-B473-62022CB071BA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{F7819D68-F1CF-44C6-A196-5F4C6AB18CBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F7819D68-F1CF-44C6-A196-5F4C6AB18CBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F7819D68-F1CF-44C6-A196-5F4C6AB18CBB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{896E921E-D798-46A2-B473-62022CB071BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{896E921E-D798-46A2-B473-62022CB071BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{896E921E-D798-46A2-B473-62022CB071BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{896E921E-D798-46A2-B473-62022CB071BA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
