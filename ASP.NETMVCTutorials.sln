@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreatingSignUpORRegisterPag
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExceptionFilterInASP.NETMVC", "ExceptionFilterInASP.NETMVC\ExceptionFilterInASP.NETMVC.csproj", "{48C952E7-7CBF-4E9A-AAFC-7242DDF8AAA4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthorizeFilter", "AuthorizeFilter\AuthorizeFilter.csproj", "{4EBA4DF7-A11B-4594-A0B0-AB8E9F518203}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{48C952E7-7CBF-4E9A-AAFC-7242DDF8AAA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{48C952E7-7CBF-4E9A-AAFC-7242DDF8AAA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{48C952E7-7CBF-4E9A-AAFC-7242DDF8AAA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4EBA4DF7-A11B-4594-A0B0-AB8E9F518203}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4EBA4DF7-A11B-4594-A0B0-AB8E9F518203}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4EBA4DF7-A11B-4594-A0B0-AB8E9F518203}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4EBA4DF7-A11B-4594-A0B0-AB8E9F518203}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
